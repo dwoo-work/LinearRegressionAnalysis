@@ -26,6 +26,11 @@ pip install scipy.stats
 
 Download the dataset from [here](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data?resource=download). Alternatively, you can download the .csv file from the Github.
 
+## Different Considerations for Linear Regression Analysis
+
+Firstly, we have to find out if the data is having a normal distribution. This can be done, by using the [Kolmogorov–Smirnov test](https://towardsdatascience.com/kolmogorov-smirnov-test-84c92fb4158d), which will tell us if the sample comes from a population with a specific distribution (in this case, a normal distribution).
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
