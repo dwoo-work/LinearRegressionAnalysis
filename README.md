@@ -26,10 +26,13 @@ pip install scipy.stats
 
 Download the dataset from [here](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data?resource=download). Alternatively, you can download the .csv file from the Github.
 
-## Different Considerations for Linear Regression Analysis
+## The Flow
 
 Firstly, we have to find out if the data is having a normal distribution. This can be done, by using the [Kolmogorov–Smirnov test](https://towardsdatascience.com/kolmogorov-smirnov-test-84c92fb4158d), which will tell us if the sample comes from a population with a specific distribution (in this case, a normal distribution).
 
+Next, if the data follows a normal distribution, we can perform [Linear Regression](https://www.ibm.com/sg-en/topics/linear-regression) to find out the best fit line for the two variables. The first variable is the quantity ordered (demand), and the other variables is the price for each item (price).
+
+Then, once the best fit line is determined, find out the coefficient value, and the intercept value. These two variables will provide you with insight, on the relationship between the demand, and the price.
 
 ## License
 
