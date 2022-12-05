@@ -26,6 +26,8 @@ pip install scipy.stats
 
 Download the dataset from [here](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data?resource=download). Alternatively, you can download the .csv file from the Github.
 
+If you have downloaded the Sample Sales dataset directly from Kaggle, it will provide you with a CSV file. To avoid UnicodeDecodeError later on, you would need to save the file in CSV UTF-8 (comma delimited) format
+
 ## The Flow
 
 Firstly, we have to find out if the data is having a normal distribution. This can be done, by using the [Kolmogorov–Smirnov test](https://towardsdatascience.com/kolmogorov-smirnov-test-84c92fb4158d), which will tell us if the sample comes from a population with a specific distribution (in this case, a normal distribution).
