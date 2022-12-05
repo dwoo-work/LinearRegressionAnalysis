@@ -40,7 +40,7 @@ Then, once the best fit line is determined, find out the coefficient value, and 
 
 ## Credit
 
-[Sales_Data_Sample] (https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)
+Sales Data Sample (https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)
 
 ## License
 
