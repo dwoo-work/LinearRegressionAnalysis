@@ -77,6 +77,21 @@ specific_columns = pd.DataFrame(sales, columns = ["QUANTITYORDERED","PRICEEACH",
 motorcycles = specific_columns[specific_columns['PRODUCTLINE'].str.match('Motorcycles')]
 ```
 
+Line 16:
+Make Quantity Ordered as an array, because for SKLearn, in order to train the data to use fit method in linear regression, we have to reshape the 1D arrays.
+```python   
+qtyOrdered = np.array(motorcycles['QUANTITYORDERED'])
+```
+
+Line 18-20:
+Identify if the motorcycles data is normally distributed
+```python   
+qtyOrdered = np.array(motorcycles['QUANTITYORDERED'])
+```
+pvalue=0.0774262. As P>0.05, it is reasonable to accept that the quantity ordered is normally distributed.
+
+
+# Make Quantity Ordered as an Array
 
 ## Credit
 

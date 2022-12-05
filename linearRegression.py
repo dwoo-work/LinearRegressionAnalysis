@@ -13,16 +13,11 @@ productLine_list = list(sales['PRODUCTLINE'].unique())
 specific_columns = pd.DataFrame(sales, columns = ["QUANTITYORDERED","PRICEEACH","PRODUCTLINE"])
 motorcycles = specific_columns[specific_columns['PRODUCTLINE'].str.match('Motorcycles')]
 
-# Make Quantity Ordered as an Array
-
 qtyOrdered = np.array(motorcycles['QUANTITYORDERED'])
-
-# Identify if the motorcycles data is normally distributed
 
 mean = qtyOrdered.mean()
 sd = qtyOrdered.std()
-
-kstest(qtyOrdered,'norm',args=(mean, sd)) # pvalue=0.0774262, as P>0.05, it is reasonable to accept that the quantity ordered is normally distributed.
+kstest(qtyOrdered,'norm',args=(mean, sd))
 
 # Identify the relationship between the quantity ordered, and the unit price for motorcycles data
 
