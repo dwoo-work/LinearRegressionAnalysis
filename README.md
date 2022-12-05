@@ -1,4 +1,4 @@
-# Linear_Regression_Analysis_using_Python
+# Linear Regression Analysis
 
 This will demonstrate to you how to perform linear regression analysis using Python.
 
