@@ -93,7 +93,7 @@ kstest(qtyOrdered,'norm',args=(mean, sd))
 pvalue=0.0774262. As P>0.05, it is reasonable to accept that the quantity ordered is normally distributed.
 
 Line 22-26:
-<p>Identify the relationship between the quantity ordered, and the unit price for motorcycles data.</p>
+Identify the relationship between the quantity ordered, and the unit price for motorcycles data.
 ```python   
 x = motorcycles[['PRICEEACH']]
 y = motorcycles[['QUANTITYORDERED']]
@@ -101,8 +101,7 @@ model = LinearRegression().fit(x,y)
 model.coef_
 model.intercept_
 ```
-<p>model.coef_ = array([[0.02305362]]). For every $1 increase in unit price, there is a 0.0231 decrease in demand.</p>
-<p>model.intercept_ = array([33.32225513]). If the motorcycle is sold at S0, there will be a demand of 33.3 units.</p>
+model.coef_ = array([[0.02305362]]). For every $1 increase in unit price, there is a 0.0231 decrease in demand. model.intercept_ = array([33.32225513]). If the motorcycle is sold at S0, there will be a demand of 33.3 units.
 
 ## Credit
 
