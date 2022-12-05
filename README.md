@@ -61,6 +61,21 @@ Read the CSV file
 sales = pd.read_csv('https://raw.githubusercontent.com/dwoo-work/Linear_Regression_Analysis_using_Python/main/src/sales_data_sample_utf8.csv')
 ```
 
+Line 10-11:
+Create list variables to understand file structure.
+Line 10 identifies the different kinds of column titles within the CSV file.
+Line 11 identifies the different kinds of vehicles that are sold, and compiled within the CSV file.
+```python   
+columns_list = list(sales)
+productLine_list = list(sales['PRODUCTLINE'].unique()))
+```
+
+Line 13-14:
+Create table variables for each of the product line. For demonstration, we will only be analysing Motorcycles data.
+```python   
+specific_columns = pd.DataFrame(sales, columns = ["QUANTITYORDERED","PRICEEACH","PRODUCTLINE"])
+motorcycles = specific_columns[specific_columns['PRODUCTLINE'].str.match('Motorcycles')]
+```
 
 
 ## Credit

@@ -7,12 +7,8 @@ from sklearn.linear_model import LinearRegression
 
 sales = pd.read_csv('https://raw.githubusercontent.com/dwoo-work/Linear_Regression_Analysis_using_Python/main/src/sales_data_sample_utf8.csv')
 
-# Create list variables
-
 columns_list = list(sales)
 productLine_list = list(sales['PRODUCTLINE'].unique())
-
-# Create table variables for each of the product line (for this code, only Motorcycles is evaluated)
 
 specific_columns = pd.DataFrame(sales, columns = ["QUANTITYORDERED","PRICEEACH","PRODUCTLINE"])
 motorcycles = specific_columns[specific_columns['PRODUCTLINE'].str.match('Motorcycles')]
