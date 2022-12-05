@@ -101,7 +101,9 @@ model = LinearRegression().fit(x,y)
 model.coef_
 model.intercept_
 ```
-model.coef_ = array([[0.02305362]]). For every $1 increase in unit price, there is a 0.0231 decrease in demand. On the other hand, model.intercept_ = array([33.32225513]). If the motorcycle is sold at S0, there will be a demand of 33.3 units.
+model.coef_ = array([[0.02305362]]). For every $1 increase in unit price, there is a 0.0231 decrease in demand.
+
+On the other hand, model.intercept_ = array([33.32225513]). If the motorcycle is sold at S0, there will be a demand of 33.3 units.
 
 ## Credit
 
