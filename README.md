@@ -38,6 +38,31 @@ Next, if the data follows a normal distribution, we can perform [Linear Regressi
 
 Then, once the best fit line is determined, find out the coefficient value, and the intercept value. These two variables will provide you with insight, on the relationship between the demand, and the price.
 
+## Code Explanation
+
+Lines 1-3:  
+To import required libraries like Pandas, Numpy, and Scipy
+```python   
+import pandas as pd
+import numpy as np
+import scipy.stats as st
+```
+
+Lines 5-6:
+To import specific functions from Scipy and SKLearn
+```python   
+from scipy.stats import kstest
+from sklearn.linear_model import LinearRegression
+```
+
+Line 8:
+Read the CSV file
+```python   
+sales = pd.read_csv('https://raw.githubusercontent.com/dwoo-work/Linear_Regression_Analysis_using_Python/main/src/sales_data_sample_utf8.csv')
+```
+
+
+
 ## Credit
 
 Sales Data Sample (https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)
