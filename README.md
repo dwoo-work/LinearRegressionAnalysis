@@ -67,7 +67,7 @@ Line 10 identifies the different kinds of column titles within the CSV file.
 Line 11 identifies the different kinds of vehicles that are sold, and compiled within the CSV file.
 ```python   
 columns_list = list(sales)
-productLine_list = list(sales['PRODUCTLINE'].unique()))
+productLine_list = list(sales['PRODUCTLINE'].unique())
 ```
 
 Line 13-14:
